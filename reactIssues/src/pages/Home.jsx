@@ -42,11 +42,11 @@ const Home = () => {
           <div className='col' key={issue.id}>
             <div className='container-grid px-4 py-5 ' id='icon-grid'>
               <div className='card h-100 '>
-                <div className='card-body'>
+                <div className='card-body bg-secondary-emphasys'>
                   <div className='row flex-row pb-2'>
                     <FontAwesomeIcon icon={faBug} className='bi text-secondary flex-shrink-0 me-3' width='1.75em' height='1.75em' />
                   </div>
-                  <h3 className='card-title fw-bold mb-2 pb-2 fs-4 text-primary text-center'>{issue.title}</h3>
+                  <a href={issue.html_url}><h3 className='card-title fw-bold mb-2 pb-2 fs-4 text-primary text-center'>{issue.title}</h3></a>
                   <p className='card-text text-black text-center pb-1'>Issue id: {issue.id}</p>
                   <p className='card-text text-black text-center pb-1'>User: {issue.user.login}</p>
                   <div className='row'>
