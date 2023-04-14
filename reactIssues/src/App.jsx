@@ -1,14 +1,15 @@
 import React from 'react'
-import IssueItem from './components/IssueItem'
+import RoutesIndex from './routes/Index'
 import './App.css'
+import { BrowserRouter } from 'react-router-dom'
 
 function App () {
   return (
     <div className='App'>
 
-      <IssueItem
-        id='00' name='test' user='me' link='test'
-      />
+      <BrowserRouter>
+        <RoutesIndex />
+      </BrowserRouter>
     </div>
   )
 }
